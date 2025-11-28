@@ -1,0 +1,219 @@
+<!-- ================== index.html ================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website SAS Kolaborasi - Materialisme</title>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: #aa9a9a;
+            padding: 15px 20px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-left a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 
+                0 0 6px rgba(255,255,255,0.7),
+                0 0 12px rgba(255,255,255,0.8),
+                0 0 20px rgba(255,255,255,1);
+            transition: 0.2s ease;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .navbar-right a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 
+                0 0 6px rgba(255,255,255,0.7),
+                0 0 12px rgba(255,255,255,0.8),
+                0 0 20px rgba(255,255,255,1);
+            transition: 0.2s ease;
+        }
+
+        .navbar-right a:hover {
+            text-shadow:
+                0 0 10px white,
+                0 0 20px white,
+                0 0 30px white,
+                0 0 40px white;
+        }
+
+        /* HERO SECTION */
+        .image-section {
+            position: relative;
+            width: 100%;
+            height: 380px;
+            overflow: hidden;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.65;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 23%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: white;
+            width: 85%;
+            text-shadow: 2px 2px 10px rgb(0,0,0);
+        }
+
+        .text-overlay h1 {
+            font-family: "Cinzel", serif;
+            font-size: 60px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .text-overlay p {
+            font-family: "Poppins", sans-serif;
+            font-size: 20px;
+            font-weight: 300;
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        /* CARD SECTION */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        /* FOOTER */
+        .footer {
+            background-color: #aa9a9a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+            margin-top: 40px;
+            text-shadow:
+                0 0 6px rgba(255,255,255,0.7),
+                0 0 12px rgba(255,255,255,0.8);
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-shadow:
+                0 0 10px white,
+                0 0 20px white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="Logo Serviam.gif" class="logo" alt="Logo SAS">
+            <a href="index.html">SAS Kolaborasi</a>
+        </div>
+
+        <div class="navbar-right">
+            <a href="Website SAS Kolaborasi.html">Home</a>
+            <a href="materi.html">Materi</a>
+            <a href="pkwu.html">Produk</a>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="image-section">
+        <img src="Materialisme.webp" alt="Materialisme">
+
+        <div class="text-overlay">
+            <h1>Materialisme</h1>
+            <p>Pandangan Filosofis Yang Menganggap Bahwa Materi Adalah Realitas Yang Paling Dasar Dan Fundamental Dalam Kehidupan Manusia.</p>
+        </div>
+    </div>
+
+    <!-- CARD SECTION -->
+    <div class="cards">
+        <div class="card">
+            <img src="Tas.jpg" alt="Tas">
+        </div>
+        <div class="card">
+            <img src="Nike SB.webp" alt="Nike SB">
+        </div>
+        <div class="card">
+            <img src="iphone-17-pro-pro-max.webp" alt="iPhone 17 Pro Max">
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        @2025 SAS Kolaborasi |~Menjadi Pemimpin Yang Kritis Dan Kreatif
+        <br>
+    </div>
+
+</body>
+</html>
