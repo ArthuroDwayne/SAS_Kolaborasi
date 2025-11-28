@@ -1,0 +1,142 @@
+<!-- ============ pkwu.html ============ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video PKWU</title>
+
+    <style>
+        /* ====== NAVBAR ====== */
+        .navbar {
+            background-color: #aa9a9a;
+            padding: 15px 20px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-left a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 
+                0 0 5px white,
+                0 0 10px white,
+                0 0 15px white,
+                0 0 20px rgba(255,255,255,0.7);
+            transition: 0.3s ease;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            margin-right: 10px;
+        }
+
+        .navbar-right a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            text-shadow: 
+                0 0 5px white,
+                0 0 10px white,
+                0 0 15px white,
+                0 0 20px rgba(255,255,255,0.7);
+            transition: 0.3s ease;
+        }
+
+        .navbar-right a:hover {
+            text-shadow:
+                0 0 10px white,
+                0 0 20px white,
+                0 0 30px white,
+                0 0 40px white;
+            transform: scale(1.05);
+        }
+
+        /* ====== VIDEO CARD ====== */
+        .video-container {
+            width: 80%;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* ====== FOOTER ====== */
+        .footer {
+            background-color: #aa9a9a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+            margin-top: 50px;
+            text-shadow:
+                0 0 6px rgba(255,255,255,0.7),
+                0 0 12px rgba(255,255,255,0.8);
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-shadow:
+                0 0 10px white,
+                0 0 20px white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="Logo Serviam.gif" class="logo" alt="Logo SAS">
+            <a href="index.html">SAS Kolaborasi</a>
+        </div>
+
+        <div class="navbar-right">
+            <a href="Website SAS Kolaborasi.html">Home</a>
+            <a href="materi.html">Materi</a>
+            <a href="pkwu.html">Produk</a>
+        </div>
+    </div>
+
+    <h1 style="text-align:center; margin-top:30px;">Cara Pembuatan Scented Candle</h1>
+
+    <!-- CARD VIDEO -->
+    <div class="video-container">
+        <video controls>
+            <source src="Video PKWU.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        @2025 SAS Kolaborasi |~Menjadi Pemimpin Yang Kritis Dan Kreatif
+        <br>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!-- ============ materi.html ============ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Materi</title>
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        background: #f7f7f7;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        background-color: #aa9a9a;
+        padding: 15px 20px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-left {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-left a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        text-shadow:
+            0 0 6px rgba(255,255,255,0.7),
+            0 0 12px rgba(255,255,255,0.8),
+            0 0 20px rgba(255,255,255,1);
+        transition: 0.2s;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        margin-right: 10px;
+    }
+
+    .navbar-right a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        text-shadow:
+            0 0 6px rgba(255,255,255,0.7),
+            0 0 12px rgba(255,255,255,0.8),
+            0 0 20px rgba(255,255,255,1);
+        transition: 0.2s;
+    }
+
+    .navbar-right a:hover {
+        opacity: 1;
+        text-shadow:
+            0 0 10px rgba(255,255,255,1),
+            0 0 20px rgba(255,255,255,1),
+            0 0 35px rgba(255,255,255,1);
+    }
+
+    /* HEADER */
+    .header {
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .header h1 {
+        font-size: 38px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .header p {
+        color: #555;
+        font-size: 18px;
+    }
+
+    /* CARD WRAPPER */
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        padding: 40px;
+        margin-top: -20px;
+    }
+
+    /* CARD STYLE */
+    .card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        transition: 0.3s;
+        cursor: pointer;
+        border: 2px solid transparent;
+    }
+
+    .card:hover {
+        transform: translateY(-7px);
+    }
+
+    .card.active {
+        border-color: #ff9800;
+        box-shadow: 0 6px 18px rgba(255,152,0,0.6);
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-content h3 {
+        margin: 0;
+        color: #333;
+        font-size: 20px;
+    }
+
+    .card-content p {
+        color: #555;
+        font-size: 15px;
+        margin-top: 10px;
+        line-height: 1.6;
+    }
+
+    /* DETAIL SECTION */
+    .detail-box {
+        background: white;
+        margin: 25px 40px;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .detail-box h2 {
+        margin-top: 0;
+        color: #333;
+    }
+
+    .detail-box p, .detail-box ul {
+        color: #555;
+        line-height: 1.7;
+    }
+
+    /* BACK BUTTON */
+    .back-btn {
+        margin-top: 25px;
+        padding: 12px 20px;
+        background-color: #ff9800;
+        color: white;
+        border-radius: 8px;
+        width: fit-content;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    .back-btn:hover {
+        background-color: #e68900;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    /* FOOTER */
+    .footer {
+        background-color: #aa9a9a;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 16px;
+        margin-top: 50px;
+        text-shadow:
+            0 0 6px rgba(255,255,255,0.7),
+            0 0 12px rgba(255,255,255,0.8);
+    }
+
+    .footer a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .footer a:hover {
+        text-shadow:
+            0 0 10px white,
+            0 0 20px white;
+    }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="navbar-left">
+        <img src="Logo Serviam.gif" class="logo" alt="Logo SAS">
+        <a href="index.html">SAS Kolaborasi</a>
+    </div>
+    <div class="navbar-right">
+        <a href="Website SAS Kolaborasi.html">Home</a>
+        <a href="materi.html">Materi</a>
+        <a href="pkwu.html">Produk</a>
+    </div>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>Materialisme & Pola Konsumsi Remaja</h1>
+    <p>Pengaruh Globalisasi, Agama, dan Hukum (UUD 1945) Terhadap Perilaku Remaja</p>
+</div>
+
+<!-- CARD SECTION -->
+<div class="card-container">
+    <div class="card" data-target="sejarah">
+        <img src="Sejarah.jpg" />
+        <div class="card-content">
+            <h3>Sejarah</h3>
+            <p>Pengaruh globalisasi (1998–2010) membuat tren fashion, K-Pop, dan brand global membentuk pola konsumsi remaja.</p>
+        </div>
+    </div>
+
+    <div class="card" data-target="agama">
+        <img src="Agama.webp" />
+        <div class="card-content">
+            <h3>Agama</h3>
+            <p>Agama menekankan sikap kritis, kesederhanaan, dan tanggung jawab agar tidak terjebak budaya flexing dan FOMO.</p>
+        </div>
+    </div>
+
+    <div class="card" data-target="pkn">
+        <img src="PKN2.webp" />
+        <div class="card-content">
+            <h3>PKN</h3>
+            <p>Materialisme dapat melanggar Pasal 28D (keadilan) dan Pasal 29 (nilai moral & agama) dalam kehidupan sehari-hari.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ================= DETAIL: SEJARAH ================= -->
+<div class="detail-box" id="sejarah">
+    <h2>Sejarah (1998–2010): Era Reformasi</h2>
+    <p>(1998–2010) ERA REFORMASI: globalisasi mulai kuat</p>
+    <p>(1998–2010) ERA REFORMASI: globalisasi mulai kuat
+    Setelah Reformasi 1998, Indonesia mulai sangat terbuka terhadap dunia luar. Pada awal 2000-an, internet sudah mulai ada di sekolah dan warnet menjadi tempat favorit remaja. Dari sini, remaja mulai mengenal budaya asing tanpa batas.</p>
+    <p>Contohnya:
+    Tas Nike, sepatu Converse, dan jeans Levi’s menjadi barang wajib karena dianggap “keren” dan menunjukkan status sosial. Bahkan, beberapa remaja menabung berbulan-bulan atau meminta orang tua membelikan demi bisa punya barang bermerek yang dipakai teman-teman mereka.</p>
+    <p>Remaja mulai memperhatikan label merk di pakaian. Jika tidak memakai barang bermerek, mereka merasa minder karena “tidak seperti anak gaul”.</p>
+    <p>Pada saat yang sama, gelombang awal K-Pop masuk ke Indonesia melalui internet dan stasiun TV. Grup seperti TVXQ, Super Junior, SNSD, dan Big Bang menjadi tren besar. Akibatnya banyak remaja membeli kaos, hoodie, gelang, poster, album, dan aksesori bertema K-Pop. Mereka meniru gaya rambut artis Korea, membeli skinny jeans, jaket bomber, atau sepatu high-top karena ingin tampil seperti idol favorit. Bahkan ada remaja yang ikut fanmeeting, fanclub, atau berburu CD album original yang harganya cukup mahal.</p>
+    <p>Jadi, remaja membeli barang bukan lagi karena kebutuhan, tetapi karena ingin menyesuaikan diri dengan budaya global, terlihat trendy, dan diterima dalam pergaulan. Globalisasi membuat konsumsi remaja meningkat drastis karena pengaruh internet, musik, fashion, dan media asing.</p>
+    <p>Peristiwa remaja membeli Nike, Converse, Levi’s, dan barang ala K-Pop pada 1998–2010 bukan sekadar mengikuti tren, tetapi mereka mulai melihat barang sebagai penentu identitas, kebahagiaan, dan status.</p>
+
+    <div class="back-btn" onclick="goBackToCards()">Kembali ke Atas</div>
+</div>
+
+<!-- ================= DETAIL: AGAMA ================= -->
+<div class="detail-box" id="agama">
+    <h2>Agama</h2>
+   <p>Materialisme pada remaja mendorong pola konsumsi yang berlebihan terkait kepemilikan barang sebagai alat ukur untuk nilai diri individu.Contohnya kebutuhan untuk sekedar mengikuti suatu tren gadget,fashion atau pakaian dan brand-brand besar lain.Dalam menghadapi fenomena ini,remaja dituntut untuk berpikir secara kritis agar mampu menilai secara logis pengaruh dari iklan,medsos dan budaya flexing yang sering membentuk keinginan konsumtif.Tanpa adanya kemampuan remaja untuk berpikir secara kritis maka remaja akan membeli barang konsumsi tanpa memikirkan kegunaan barang secara bijak.
+<p>Fenomena ini berkaitan dengan ideologi dan gaya hidup saat ini,karena budaya modern sering menekankan bahwa kebahagiaan dan status sosial berasal dari kepemilikan barang.Fenomena materialisme pada remaja juga tidak terlepad dari pengaruh media sosial,karena berbagai platform seperti Instagram,Tiktok dan Youtube sering menampilkan kehidupan yang kelihatan mewah melalui FYP kita.Ideologi ini kemudian mendoron remaja untuk mengikuti gaya hidup yang berkembang yang menekankan penampilan,status sosial dan ketakutan untuk ketinggalan tren (FOMO).</p>
+    </p>
+    <p>Selain itu,sikap bertanggung jawab juga sangat penting bagi remaja agar tidak mengikuti gaya hidup yang konsumtif yang merugikan diri sendiri,seperti boros uang,terjebak FOMO atau membeli barang supaya terlihat keren di media sosial.Tanggung jawab juga berarti memilih gaya hidup yang sehat,misalnya lebih meprioritaskan kebutuhan,memilih konten yang positif,serta memahami dampak konsumsi terhadap diri sendiri,keluarga dan lingkungan.
+</p>
+<p>Dengan begitu,remaja dapat mampu menilai pengaruh media sosial,ideologi modern dan gaya hidup berkembang secara lebih bijak,sehingga tidak mudah terpengaruh oleh tren.Mereka dapat membuat pilihan yang lebih sadar dan membangun gaya hidup sesuai kebutuhan dan nilai yang mereka anggap penting.
+
+</p>
+<p>Mengurangi materialisme dapat dilakukan dengan membangun kesadaran akan perbedaan kebutuhan dan keinginan, memperkuat nilai seperti kebersamaan, tanggung jawab, dan kesederhanaan, serta mengembangkan identitas yang tidak bergantung pada barang. Literasi media dan keuangan juga penting agar seseorang tidak mudah terpengaruh budaya konsumsi berlebihan.</p>
+
+    <div class="back-btn" onclick="goBackToCards()">Kembali ke Atas</div>
+</div>
+
+<!-- ================= DETAIL: PKN ================= -->
+<div class="detail-box" id="pkn">
+    <h2>PKN — Pasal 28D & 29</h2>
+    <p>28D :
+   Materialisme dan pola konsumsi sering menciptakan standar sosial yang baru seperti : siapa yang punya barang bagus maka akan lebih diterima di suatu kelompok pertemanan.Hal ini dapat menciptakan perlakuan yang tidak adil terhadap remaja yang memiliki keadaan ekonomi yang berbeda.Ketika nilai keadilan dalam pasal ini dihadapkan kepada kenyataan sosial,terlihat bahwa tren materialistik dan pola konsumsi yang berlebihan terhadap remaja dapat mengganggu hak remaja untuk mendapatkan perlakuan yang setara dalam lingkungan sekolah maupun pergaulan mereka.
+</p>
+    <p>29 :
+   Materialisme dan pola konsumsi berlebihan sangat bertentangan dengan Pasal 29, yang menekankan nilai-nilai keagamaan seperti kesederhanaan, tidak berlebihan, tidak memamerkan harta, dan hidup sesuai kebutuhan. Ajaran agama membiasakan remaja untuk menghargai sesama, menghindari sikap pamer, dan tidak menjadikan kekayaan sebagai ukuran martabat diri. Saat budaya materialisme semakin kuat melalui media sosial, nilai moral tersebut mudah tergeser, dan remaja lebih fokus pada citra diri serta pengakuan sosial daripada tanggung jawab etis dan spiritual yang diajarkan agama.
+
+</p>
+
+    <div class="back-btn" onclick="goBackToCards()">Kembali ke Atas</div>
+</div>
+
+<!-- ================= DETAIL: CONTOH KASUS ================= -->
+<div class="detail-box">
+    <h2>Contoh Kasus</h2>
+    <p>Seorang remeja di sekolah tidak memiliki alat elektronik hp atau laptop yang bermerek seperti SAMSUNG dan APPLE karena keterbatasan kondisi ekonomi dari keluarganya.Akibatnya ia dikucilkan dan tidak dianggap dalam suatu perkumpulan pertemanan bahkan diejek oleh teman-temannya.Ketidakadilan sosial ini mencerminkan pelanggaran prinsip Pasal 28D,karena ia diperlakukan tidak setara oleh teman-temannya hanya karena keterbatasan kondisi ekonomi keluarganya.
+
+Disuatu sisi,remaja lain yang menjauhi siswa tersebut mulai terjebak budaya pamer di media sosial.Dia menghabiskan uang tabungannya untuk membeli barang mahal demi mengikuti tren dan mendapatkan perhatian meskipun ia merupakan anggota misdinar di gereja.Tindakan ini mencerminkan pelanggaran dengan Pasal 29,karena dorongan materialistik yang membuatnya mengabaikan nilai moral dan agama seperti kesederhanaan dan tanggung jawab.</p>
+
+    <div class="back-btn" onclick="goBackToCards()">Kembali ke Atas</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    @2025 SAS Kolaborasi | Menjadi Pemimpin Yang Kritis Dan Kreatif
+    <br>
+</div>
+
+<!-- JS -->
+<script>
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            cards.forEach(c => c.classList.remove('active'));
+            card.classList.add('active');
+
+            const targetId = card.getAttribute('data-target');
+            const targetElement = document.getElementById(targetId);
+            if(targetElement) {
+                targetElement.scrollIntoView({behavior: "smooth"});
+            }
+        });
+    });
+
+    function goBackToCards() {
+        document.querySelector('.card-container')
+            .scrollIntoView({ behavior: "smooth" });
+    }
+</script>
+
+</body>
+</html>
